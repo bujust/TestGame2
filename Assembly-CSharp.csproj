@@ -155,9 +155,13 @@
      <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Screen\ScreenSetResolution.cs" />
      <Compile Include="Assets\PlayMaker ArrayMaker\Addons\Unity\Text\SplitTextToArrayList.cs" />
      <Compile Include="Assets\PlayMaker Comms Tool\Code\PlayMakerCommsTool.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\__Internal\FsmStateActionAdvanced.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Input\MousePickEvent2.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Math\FloatOperatorAdvanced.cs" />
      <Compile Include="Assets\PlayMaker Custom Actions\PlayerPrefsx\PlayerPrefsX.cs" />
      <Compile Include="Assets\PlayMaker Custom Actions\PlayerPrefsx\PlayerPrefsxGetValue.cs" />
      <Compile Include="Assets\PlayMaker Custom Actions\PlayerPrefsx\PlayerPrefxSetValue.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Transform\FollowMouse2D.cs" />
      <Compile Include="Assets\PlayMaker PathFinding\Agent\AgentActivateCurrentOffMeshLink.cs" />
      <Compile Include="Assets\PlayMaker PathFinding\Agent\AgentCompleteOffMeshLink.cs" />
      <Compile Include="Assets\PlayMaker PathFinding\Agent\AgentFindClosestEdge.cs" />
@@ -655,6 +659,7 @@
      <Compile Include="Assets\PlayMaker\Actions\Math\IntAdd.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Math\IntClamp.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Math\IntOperator.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Math\IntOperatorAdvanced.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Math\RandomBool.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Math\RandomFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Math\RandomInt.cs" />
@@ -1336,17 +1341,17 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
+ <Reference Include="ConditionalExpression">
+ <HintPath>D:/Documents/TestGame2/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMaker">
+ <HintPath>D:/Documents/TestGame2/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/Administrator/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Administrator/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="PlayMaker">
- <HintPath>D:/Documents/TestGame2/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
- </Reference>
- <Reference Include="ConditionalExpression">
- <HintPath>D:/Documents/TestGame2/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
