@@ -441,7 +441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1032421663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,16 +578,24 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.SetIntValue
+        - HutongGames.PlayMaker.Actions.GetOwner
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 603dd905603dd905603dd905
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000030000000600000009000000
+        actionHashCodes: 603dd905603dd905603dd9055c004505
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: ChessData
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -650,7 +658,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000100000001000000001000000100000001000000001000000
+        paramDataType: 10000000100000000100000010000000100000000100000010000000100000000100000013000000
         paramName:
         - intVariable
         - intValue
@@ -661,8 +669,9 @@ MonoBehaviour:
         - intVariable
         - intValue
         - everyFrame
-        paramDataPos: 000000000100000000000000020000000300000001000000040000000500000002000000
-        paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000001000000
+        - storeGameObject
+        paramDataPos: 00000000010000000000000002000000030000000100000004000000050000000200000000000000
+        paramByteDataSize: 00000000000000000100000000000000000000000100000000000000000000000100000000000000
     - name: State 2
       description: 
       colorIndex: 0

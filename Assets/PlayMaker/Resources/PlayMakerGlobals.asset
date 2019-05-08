@@ -35,6 +35,12 @@ MonoBehaviour:
     quaternionVariables: []
     gameObjectVariables:
     - useVariable: 1
+      name: ChessData
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: MainCamera
       tooltip: 
       showInInspector: 0
@@ -47,5 +53,5 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000
   events: []
