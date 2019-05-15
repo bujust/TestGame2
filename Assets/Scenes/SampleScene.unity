@@ -579,15 +579,17 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.GetOwner
+        - HutongGames.PlayMaker.Actions.SetVector3Value
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 00000000030000000600000009000000
-        actionHashCodes: 603dd905603dd905603dd9055c004505
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 000000000300000006000000090000000a000000
+        actionHashCodes: 603dd905603dd905603dd9055c004505090b8901
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -648,17 +650,29 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: Origin
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: -4, y: 4, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000
+        byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000100000000100000010000000100000000100000010000000100000000100000013000000
+        paramDataType: 100000001000000001000000100000001000000001000000100000001000000001000000130000001c0000001c00000001000000
         paramName:
         - intVariable
         - intValue
@@ -670,8 +684,11 @@ MonoBehaviour:
         - intValue
         - everyFrame
         - storeGameObject
-        paramDataPos: 00000000010000000000000002000000030000000100000004000000050000000200000000000000
-        paramByteDataSize: 00000000000000000100000000000000000000000100000000000000000000000100000000000000
+        - vector3Variable
+        - vector3Value
+        - everyFrame
+        paramDataPos: 00000000010000000000000002000000030000000100000004000000050000000200000000000000000000000100000003000000
+        paramByteDataSize: 00000000000000000100000000000000000000000100000000000000000000000100000000000000000000000000000001000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -745,7 +762,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
+        - Finish
         - 
         - Finish
         byteData: 00
@@ -984,7 +1001,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: -2
         - useVariable: 1
           name: AddX
           tooltip: 
@@ -1207,16 +1224,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Vector3Operator
         - HutongGames.PlayMaker.Actions.CreateObject
         - HutongGames.PlayMaker.Actions.ArrayListAdd
+        - HutongGames.PlayMaker.Actions.SetFsmInt
         - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 00000000060000000b00000010000000
-        actionHashCodes: a7550203bf83c9001cc91602603dd905
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 00000000060000000b0000001000000015000000
+        actionHashCodes: a7550203bf83c9001cc91602081bbf05603dd905
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -1247,6 +1266,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: ThisChess
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1260,6 +1287,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: ChessList
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Logic
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Index
         fsmObjectParams: []
         fsmVarParams:
         - variableName: ThisChess
@@ -1298,6 +1337,12 @@ MonoBehaviour:
         fsmIntParams:
         - useVariable: 1
           name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: I
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1351,12 +1396,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 06000000000000
+        byteData: 0600000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1c0000001c000000070000001c0000000f0000000100000013000000130000001c0000001c000000130000001400000012000000270000000100000010000000100000001000000001000000
+        paramDataType: 1c0000001c000000070000001c0000000f0000000100000013000000130000001c0000001c0000001300000014000000120000002700000001000000100000001400000012000000120000001000000001000000100000001000000001000000
         paramName:
         - vector1
         - vector2
@@ -1374,11 +1419,16 @@ MonoBehaviour:
         - variable
         - convertIntToByte
         - index
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
         - intVariable
         - add
         - everyFrame
-        paramDataPos: 00000000010000000000000002000000000000000400000000000000010000000300000004000000020000000000000000000000000000000500000000000000010000000200000006000000
-        paramByteDataSize: 00000000000000000400000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000
+        paramDataPos: 000000000100000000000000020000000000000004000000000000000100000003000000040000000200000000000000000000000000000005000000000000000100000001000000020000000100000006000000020000000300000007000000
+        paramByteDataSize: 000000000000000004000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1680,11 +1730,6 @@ Prefab:
       propertyPath: fsm.states.Array.data[2].actionData.fsmGameObjectParams.Array.data[0].value
       value: 
       objectReference: {fileID: 519420028}
-    - target: {fileID: 114160579888053132, guid: 5d5821da0b5529146851a38f186dab37,
-        type: 2}
-      propertyPath: fsm.preprocessed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1244456363806758, guid: 5d5821da0b5529146851a38f186dab37, type: 2}
       propertyPath: m_IsActive
       value: 0
