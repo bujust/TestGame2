@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -41,7 +42,25 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: 'DataManger '
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: MainCamera
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: ShootLogoc
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: ThisGun
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -53,5 +72,8 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000
-  events: []
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
+  events:
+  - LeftClick
+  - GO
+  - STOP

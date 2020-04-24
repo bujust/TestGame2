@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - FiringPin
+  - Ground
+  - ZiDan
+  - Enemy
   layers:
   - Default
   - TransparentFX
