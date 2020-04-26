@@ -48,3 +48,6 @@ TagManager:
   - name: WorldUI
     uniqueID: 2691552573
     locked: 0
+  - name: monster
+    uniqueID: 2929352939
+    locked: 0
